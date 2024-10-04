@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday SIDDU </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(120deg, #ff9a9e 0%, #fad0c4 55%, #fad0c4 100%);
+            background-size: 200% 200%;
+            animation: gradientBG 10s ease infinite;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+        .balloons {
+            display: flex;
+            justify-content: center;
+        }
+        .balloon {
+            width: 60px;
+            height: 80px;
+            background-color: #ff6f61;
+            border-radius: 50%;
+            position: relative;
+            margin: 10px;
+            animation: float 3s ease-in-out infinite;
+        }
+        .balloon::before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 20px;
+            background-color: white;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday SIDDU!</h1>
+        <p>have a happiest year</p>
+        <div class="balloons">
+            <div class="balloon" style="background-color: #ff6f61;"></div>
+            <div class="balloon" style="background-color: #fcbf49;"></div>
+            <div class="balloon" style="background-color: #4caf50;"></div>
+            <div class="balloon" style="background-color: #2196f3;"></div>
+        </div>
+    </div>
+</body>
+</html>
